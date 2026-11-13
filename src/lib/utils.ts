@@ -49,10 +49,3 @@ export function getCategoryColor(category: string): string {
   };
   return colors[category] || 'bg-gray-500/20 text-gray-400 border-gray-500/30';
 }
-
-export function getAssetPath(path: string): string {
-  const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  if (path.startsWith('http://') || path.startsWith('https://')) return path;
-  const cleanPath = path.startsWith('/') ? path : `/${path}`;
-  return `${base}${cleanPath}`;
-}

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { VEHICLES } from '@/constants/vehicles';
-import { getCategoryLabel, getAssetPath } from '@/lib/utils';
+import { getCategoryLabel } from '@/lib/utils';
 import { Sparkles, X, ZoomIn } from 'lucide-react';
 
 export default function GalleryClient() {
@@ -38,7 +38,7 @@ export default function GalleryClient() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src={getAssetPath('/videos/hero.mp4')} type="video/mp4" />
+            <source src="/videos/hero.mp4" type="video/mp4" />
           </video>
         </div>
       </div>

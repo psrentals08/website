@@ -130,7 +130,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
           <div>
-            &copy; {new Date().getFullYear()} PS Rentals. All rights reserved. Built for GitHub Pages.
+            &copy; {new Date().getFullYear()} PS Rentals. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
             <Link href="/vehicles" className="hover:text-brand-orange transition-colors">

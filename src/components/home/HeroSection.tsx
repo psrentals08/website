@@ -4,7 +4,6 @@ import { motion, type Variants } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown, ArrowRight, Sparkles } from 'lucide-react';
-import { getAssetPath } from '@/lib/utils';
 
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -44,7 +43,7 @@ export default function HeroSection() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover scale-105"
         >
-          <source src={getAssetPath('/videos/hero.mp4')} type="video/mp4" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
 
         {/* Dynamic Dark Gradient Overlays */}
@@ -140,7 +139,7 @@ export default function HeroSection() {
           >
             <div className="relative w-72 h-72 rounded-3xl overflow-hidden border border-brand-orange/30 bg-brand-charcoal/40 backdrop-blur-xl p-4 shadow-2xl shadow-brand-orange/10 group">
               <Image
-                src={getAssetPath('/images/logo-reveal.gif')}
+                src="/images/logo-reveal.gif"
                 alt="PS Rentals Logo Reveal"
                 fill
                 unoptimized
