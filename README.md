@@ -1,25 +1,28 @@
-# PS Rentals
+# PS Rentals — GitHub Pages
 
-PS Rentals is a Next.js 16 App Router application. Its existing `src/app` structure is supported by Vercel, so the project does not need a Vercel-specific folder layout or a `vercel.json` file.
+Mobile-friendly static Next.js storefront with WhatsApp bookings and exact Google Maps directions.
 
-## Run locally
+## Local development
+Run `npm ci` then `npm run dev`.
 
-```bash
-npm install
-npm run dev
-```
+## GitHub Pages deployment
+1. Push the changes to `main` in https://github.com/psrentals08/psr.
+2. Set repository **Settings → Pages → Source → GitHub Actions**.
+3. Run **Deploy GitHub Pages**, or push to `main`.
+4. Once deployment succeeds, use https://psrentals08.github.io/psr/.
 
-Open [http://localhost:3000](http://localhost:3000).
+`npm run build:pages` exports to `out/` for `/psr`. The workflow obtains the path from GitHub so custom domains work too. `npm run build` exports for a domain root. No Node server is required on the host. Do not commit `out/`, `.next/`, or `node_modules/`.
 
-## Deploy with Vercel
+## Structure
+- `.github/workflows/pages.yml`: build and deployment workflow
+- `scripts/build-pages.mjs`: static export and `.nojekyll`
+- `src/app`: homepage, booking, contact, layout, responsive CSS
+- `src/components`: storefront, form, contact and shared header/footer
+- `src/constants/contact.ts`: exact address and Google Maps destination
+- `src/lib`: WhatsApp helpers and GitHub Pages asset paths
+- `public`: logo, bike photos and video
 
-1. Import the GitHub repository into Vercel.
-2. Keep the project root set to `.` and let Vercel detect Next.js.
-3. Keep the default build command (`npm run build`) and output settings.
-4. Deploy. Vercel can deploy future commits from the connected Git branch automatically.
+## Rental enquiries
+All scooters and commuter bikes are ₹500/day; Royal Enfield Hunter 350 is ₹1,500/day. Customers send their own WhatsApp enquiry to +91 99858 19038. The business must confirm availability; there is no payment processor or reservation database.
 
-Vercel uses the standard Next.js build and output settings; no custom deployment configuration is needed.
-
-## Current app behavior
-
-The booking and contact forms are front-end demonstrations: bookings are stored in each visitor's browser, and the contact form only displays a local confirmation. They do not submit to a shared database or send messages. The admin screens are demo screens and are publicly accessible, so do not use them for private or live booking data.
+Website created by Rama Sivaji. Website development enquiries: ramsivaji0@gmail.com.

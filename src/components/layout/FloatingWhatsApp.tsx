@@ -1,7 +1,7 @@
 'use client';
 
 export default function FloatingWhatsApp() {
-  const whatsappNumber = 'XXXXXXXXXXX'; // Replace with actual number
+  const whatsappNumber = '919985819038'; // Replace with actual number
   const message = encodeURIComponent('Hi! I want to book a vehicle from PS Rentals.');
   const href = `https://wa.me/${whatsappNumber}?text=${message}`;
 
@@ -10,7 +10,7 @@ export default function FloatingWhatsApp() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 transition-all duration-300 hover:scale-110"
+      className="floating-whatsapp"
       aria-label="Chat on WhatsApp"
     >
       <svg

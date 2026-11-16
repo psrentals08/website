@@ -1,161 +1,55 @@
-@import "tailwindcss";
-
-:root {
-  --color-brand-orange: #F47719;
-  --color-brand-orange-light: #FF8C2A;
-  --color-brand-orange-dark: #D4620E;
-  --color-brand-black: #080808;
-  --color-brand-charcoal: #1A1A1A;
-  --color-brand-charcoal-light: #2A2A2A;
-  --color-brand-gray: #6B7280;
-  --color-brand-gray-light: #9CA3AF;
-  --brand-orange: #F47719;
-  --brand-black: #080808;
-  --brand-charcoal: #1A1A1A;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  background-color: #080808;
-  color: #ffffff;
-  font-family: 'Inter', system-ui, sans-serif;
-  overflow-x: hidden;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #1A1A1A;
-}
-::-webkit-scrollbar-thumb {
-  background: #F47719;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #FF8C2A;
-}
-
-/* Text selection */
-::selection {
-  background: rgba(244, 119, 25, 0.3);
-  color: #ffffff;
-}
-
-/* Custom Utility Classes */
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: #F47719;
-  color: #ffffff;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 14px rgba(244, 119, 25, 0.25);
-  cursor: pointer;
-}
-.btn-primary:hover {
-  background-color: #FF8C2A;
-  box-shadow: 0 6px 20px rgba(244, 119, 25, 0.4);
-  transform: translateY(-2px);
-}
-.btn-primary:active {
-  transform: translateY(0);
-}
-
-.btn-outline {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border: 2px solid #F47719;
-  color: #F47719;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-.btn-outline:hover {
-  background-color: #F47719;
-  color: #ffffff;
-  box-shadow: 0 4px 14px rgba(244, 119, 25, 0.3);
-}
-
-.btn-ghost {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 500;
-  transition: color 0.2s ease;
-  cursor: pointer;
-}
-.btn-ghost:hover {
-  color: #F47719;
-}
-
-.section-padding {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-@media (min-width: 640px) {
-  .section-padding { padding-left: 1.5rem; padding-right: 1.5rem; }
-}
-@media (min-width: 1024px) {
-  .section-padding { padding-left: 2rem; padding-right: 2rem; }
-}
-@media (min-width: 1280px) {
-  .section-padding { padding-left: 4rem; padding-right: 4rem; }
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  font-family: 'Rajdhani', system-ui, sans-serif;
-}
-@media (min-width: 640px) {
-  .section-title { font-size: 2.25rem; }
-}
-@media (min-width: 1024px) {
-  .section-title { font-size: 3rem; }
-}
-
-.card-dark {
-  background-color: #1A1A1A;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 1rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-.card-dark:hover {
-  border-color: rgba(244, 119, 25, 0.4);
-  box-shadow: 0 10px 30px rgba(244, 119, 25, 0.12);
-}
-
-.orange-glow {
-  box-shadow: 0 0 30px rgba(244, 119, 25, 0.3), 0 0 60px rgba(244, 119, 25, 0.1);
-}
-
-.text-gradient-orange {
-  background: linear-gradient(135deg, #F47719, #FF8C2A);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #faf9f6; color: #24291f; font-family: Arial, Helvetica, sans-serif; }
+button { cursor: pointer; }
+/* PS Rentals storefront */
+.ps-home{background:#faf9f6;color:#22251f;font-family:Arial,Helvetica,sans-serif}.ps-nav{height:96px;background:#faf9f6;color:#22251f;display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid #deded5;position:relative;z-index:30;gap:24px}.ps-brand{display:flex;align-items:center;gap:10px;flex-shrink:0}.ps-brand img{width:49px;height:49px;object-fit:contain;mix-blend-mode:multiply}.ps-brand>span{font-size:22px;font-weight:900;letter-spacing:-1px}.ps-brand small{display:block;font-size:7px;letter-spacing:1.3px;margin-top:5px;font-weight:600}.nav-links,.nav-actions{display:flex;align-items:center;gap:28px}.nav-links a{font-size:13px;font-weight:600}.nav-links a:hover,.text-link:hover{color:#c44e1c}.nav-actions{gap:22px}.nav-phone{display:flex;align-items:center;gap:7px;font-size:12px}.ps-button{display:inline-flex;align-items:center;justify-content:center;gap:16px;border-radius:7px;padding:17px 24px;font-size:13px;font-weight:700;border:0;cursor:pointer;transition:transform .2s,background .2s}.ps-button:hover{transform:translateY(-2px)}.ps-button.dark{background:#24291f;color:#fff}.ps-button.orange{background:#ed692b;color:white}.ps-button.dark:hover{background:#404c33}.menu-button{display:none}.skip-link{position:absolute;top:-100px;background:white;padding:15px;color:black}.skip-link:focus{top:10px}.ps-hero{max-width:1500px;margin:auto;display:grid;grid-template-columns:1fr 1fr;min-height:650px;padding:74px 5% 52px;overflow:hidden;gap:12px}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:8px;color:#6d715e;margin-bottom:25px}.status-dot{height:7px;width:7px;border-radius:50%;background:#ed692b}.hero-copy h1{font-size:clamp(46px,4.9vw,76px);line-height:1.06;letter-spacing:-4px;font-weight:750;margin:0 0 26px}.hero-copy h1 em{font-style:normal;color:#df622a}.hero-copy>p{font-size:14px;line-height:1.9;color:#76786e}.hero-actions{display:flex;gap:26px;align-items:center;margin-top:29px}.text-link{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:700}.hero-location{display:flex;gap:10px;align-items:center;margin-top:45px;color:#5c6352;font-size:11px;font-weight:700}.hero-location small{display:block;font-size:10px;font-weight:400;margin-top:5px}.hero-art{position:relative;min-width:0;display:flex;align-items:center;justify-content:center;isolation:isolate}.hero-circle{position:absolute;width:450px;height:450px;border-radius:50%;background:#f0e7d5;z-index:-2;right:0;top:15px}.hero-word{position:absolute;font-size:130px;font-weight:900;color:#e0d5bd;letter-spacing:-8px;top:25px;z-index:-1;right:40px}.hero-art>img{width:112%;max-width:none;mix-blend-mode:multiply;object-fit:contain;transform:rotate(-4deg);position:relative;margin-top:50px}.ride-stamp{position:absolute;right:0;top:-8px;font-size:11px;line-height:1.7;transform:rotate(8deg);color:#596245;z-index:2}.ride-stamp svg{margin-top:5px}.hero-caption{position:absolute;bottom:0;left:22px;right:10px;display:grid;grid-template-columns:1fr auto;gap:5px;border-top:1px solid #c9cbbd;padding-top:16px}.hero-caption>span{font-size:8px;letter-spacing:2px}.hero-caption strong{font-size:18px;grid-column:1}.hero-caption a{grid-column:2;grid-row:1/3;border:1px solid #c9cbbd;border-radius:50%;padding:8px}.trust-strip{background:#edece4;padding:22px 8%;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#525b45;border-block:1px solid #e0e1d5}.trust-strip span{display:flex;gap:10px;align-items:center;font-size:12px}.trust-strip svg{width:18px;height:18px}.ps-section{padding:84px 5%;max-width:1500px;margin:auto;scroll-margin-top:25px}.section-top{display:flex;justify-content:space-between;align-items:end;gap:24px}.ps-home h2{font-size:clamp(30px,3vw,44px);font-weight:700;letter-spacing:-1.8px;line-height:1.15}.section-top .eyebrow,.story-copy .eyebrow,.booking-section .eyebrow,.faq-section .eyebrow{margin-bottom:15px}.section-top>p{font-size:12px;color:#797c70;line-height:1.8}.filter-row{display:flex;gap:8px;margin:30px 0 25px}.filter-row button{border:1px solid #dedfd5;padding:10px 20px;border-radius:30px;font-size:11px;cursor:pointer}.filter-row button.selected{background:#293022;color:white;border-color:#293022}.filter-row button span{font-size:9px;margin-left:10px;opacity:.65}.bike-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.bike-card{border:1px solid #dedfd6;background:white;border-radius:10px;overflow:hidden;transition:box-shadow .2s,transform .2s}.bike-card:hover{box-shadow:0 12px 30px #24291f0d;transform:translateY(-4px)}.bike-picture{position:relative;background:#f3f3ed;height:230px;padding:25px 10px 10px}.bike-picture>span{position:absolute;left:16px;top:16px;font-size:7px;letter-spacing:1px;z-index:1;color:#67705b;background:#fff9;padding:5px 7px;border-radius:3px}.bike-picture img{height:100%;width:100%;object-fit:contain;mix-blend-mode:multiply}.bike-info{padding:20px 17px}.bike-title{display:flex;align-items:center;justify-content:space-between}.bike-title h3{font-size:19px;font-weight:700;letter-spacing:-.6px}.bike-info>p{font-size:11px;color:#83867b;margin-top:6px}.bike-spec{font-size:9px;color:#626c57;margin-top:19px;padding-bottom:18px;border-bottom:1px solid #eee}.bike-bottom{display:flex;justify-content:space-between;gap:8px;align-items:center;padding-top:17px}.bike-bottom strong{font-size:13px}.bike-bottom small{font-size:8px;color:#818677;display:block;margin-top:4px}.bike-bottom a{font-size:10px;color:#c35124;display:flex;align-items:center;gap:4px;font-weight:700}.fleet-note{font-size:10px;line-height:1.8;color:#7c8273;margin-top:22px}.story-section{display:grid;grid-template-columns:1fr 1fr;background:#eeeee5;gap:7%;padding:70px 7%;align-items:center}.story-video{position:relative;background:#24291f;border-radius:12px;overflow:hidden}.story-video video{width:100%;max-height:500px;aspect-ratio:1.05;object-fit:cover;display:block}.story-video>span{display:block;padding:18px;color:#fff;font-size:8px;letter-spacing:2px}.step{display:flex;gap:22px;margin-top:28px}.step>span{color:#bb672e;font-size:13px;padding-top:3px}.step h3{font-size:16px;font-weight:700}.step p{font-size:12px;line-height:1.8;color:#6d7562;margin-top:6px;max-width:330px}.booking-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:8%;align-items:center}.booking-section>div>p{color:#707866;font-size:13px;line-height:1.8;margin:20px 0 25px}.ride-form{background:#fff;border:1px solid #e0e2d7;border-radius:12px;padding:30px;color:#303727}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.ride-form label{font-size:11px;display:flex;flex-direction:column;gap:10px;font-weight:600}.ride-form input,.ride-form select{width:100%;min-width:0;border:1px solid #d9ddcf;border-radius:5px;padding:12px 10px;background:#fafbf7;color:#353d2d;font:inherit;font-weight:400;min-height:43px;color-scheme:light}.ride-form .ps-button{width:100%;margin-top:24px}.form-help{font-size:10px!important;line-height:1.8!important;color:#7b806f!important;margin:13px 0 0!important}.form-error{font-size:12px;color:#b5341e;margin-top:15px}.standalone-booking{max-width:680px;margin:auto}.faq-section{display:grid;grid-template-columns:1fr 1.25fr;gap:8%;border-top:1px solid #e1e3d7}.faq-section>div>p{font-size:12px;color:#777e6d;line-height:1.8;margin-top:20px}.faq-section>div>p a{color:#bd542a}.faq-list details{border-bottom:1px solid #dfe2d6;padding:21px 0}.faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font-size:13px;font-weight:600}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary span{font-weight:400;color:#7b866d}.faq-list details[open] summary span{transform:rotate(45deg)}.faq-list details p{font-size:12px;color:#6f7961;line-height:1.8;margin:16px 25px 0 0}.contact-banner{margin:10px 5% 75px;background:#f2d5b9;padding:42px 5%;border-radius:12px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact-banner svg{display:inline-block;vertical-align:middle}.contact-banner span{font-size:9px;letter-spacing:1.5px;margin-left:8px;text-transform:uppercase}.contact-banner h2{margin:18px 0 13px;font-size:34px}.contact-banner p{font-size:12px;line-height:1.8;color:#705c45}.contact-banner>div:last-child>p{font-size:10px;margin-top:12px;text-align:center}.ps-footer{background:#252b21;color:#e7e9df;padding:55px 5% 24px;display:grid;grid-template-columns:1fr 1fr;gap:30px}.footer-brand{font-size:27px;letter-spacing:-1px;font-weight:800}.footer-brand span{display:block;font-size:8px;letter-spacing:1.8px;font-weight:400;margin-top:8px}.ps-footer p{font-size:12px;color:#a3ad97;margin-top:17px}.ps-footer>div:nth-child(2){display:flex;flex-direction:column;align-items:end;gap:12px;font-size:13px}.footer-bottom{grid-column:1/-1;display:flex;justify-content:space-between;border-top:1px solid #444b3e;padding-top:22px;font-size:9px;color:#9ba88e;margin-top:22px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #e6763a;outline-offset:4px}
+@media(min-width:1500px){.ps-hero{padding-inline:75px}.hero-circle{width:510px;height:510px}.hero-art>img{max-width:650px}.ps-section{padding-inline:75px}}
+@media(max-width:1100px){.nav-phone{display:none}.nav-links{gap:18px}.ps-brand small{font-size:6px}.hero-copy h1{letter-spacing:-2.8px}.hero-circle{width:370px;height:370px}.hero-word{font-size:100px}.ps-hero{min-height:580px}.bike-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bike-picture{height:270px}.hero-caption{bottom:0}}
+@media(max-width:760px){.ps-nav{height:78px;padding:0 5%;gap:10px}.ps-brand>span{font-size:18px}.ps-brand img{width:37px;height:37px}.ps-brand small{display:none}.nav-actions{gap:12px}.nav-actions .ps-button{font-size:10px;padding:12px 14px;gap:5px}.menu-button{display:block;background:none;border:0;color:#252b21}.nav-links{display:none;position:absolute;left:0;right:0;top:78px;background:#faf9f6;border-bottom:1px solid #ddd;padding:25px;box-shadow:0 12px 20px #0001}.nav-links.is-open{display:flex;flex-direction:column;align-items:start;gap:23px}.ps-hero{grid-template-columns:1fr;padding:43px 6% 32px;gap:0}.hero-copy h1{font-size:53px;letter-spacing:-3px}.eyebrow{font-size:8px;margin-bottom:21px}.hero-copy>p{font-size:13px}.hero-location{margin-top:25px}.hero-actions{margin-top:24px}.hero-art{height:390px;margin-top:35px}.hero-circle{height:325px;width:325px;right:0;top:0}.hero-word{font-size:100px;top:5px;right:28px}.hero-art>img{width:105%;max-height:345px;margin-top:0}.ride-stamp{right:0;top:0}.hero-caption{bottom:-5px;left:0;right:0}.trust-strip{display:grid;grid-template-columns:1fr 1fr;gap:20px 12px;padding:23px 6%}.trust-strip span{font-size:10px;gap:7px}.trust-strip svg{width:16px}.ps-section{padding:55px 6%}.section-top{display:block}.section-top>p{margin-top:15px}.ps-home h2{font-size:33px;letter-spacing:-1.5px}.bike-grid{gap:12px}.bike-picture{height:185px;padding:30px 6px 0}.bike-picture>span{font-size:6px;left:9px;top:10px}.bike-info{padding:14px 11px}.bike-title h3{font-size:16px}.bike-title svg{width:14px}.bike-info>p{font-size:9px;line-height:1.5}.bike-spec{font-size:8px;margin-top:12px;padding-bottom:12px}.bike-bottom{align-items:start;flex-direction:column;gap:12px}.bike-bottom strong{font-size:12px}.bike-bottom a{font-size:11px}.filter-row button{padding:10px 15px;font-size:10px}.story-section{grid-template-columns:1fr;padding:45px 6%;gap:35px}.story-video video{max-height:350px;aspect-ratio:1.2}.booking-section,.faq-section{grid-template-columns:1fr;gap:30px}.ride-form{padding:23px 18px}.form-grid{gap:18px 12px}.contact-banner{margin:0 6% 45px;padding:30px 23px;flex-direction:column;align-items:start}.contact-banner h2{font-size:29px}.contact-banner>div:last-child>p{text-align:left}.ps-footer{padding:40px 6% 85px;grid-template-columns:1fr}.ps-footer>div:nth-child(2){align-items:start}.footer-bottom{flex-direction:column;gap:10px}.desktop-break{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+a{color:inherit;text-decoration:none}button,input,select{font-family:inherit}.hero-art{background:#faf9f6}.hero-art>img{height:430px;margin-top:20px}.hero-circle{z-index:0}.hero-word{z-index:0}.hero-art>img{z-index:1}.hero-caption{z-index:2}.floating-whatsapp{position:fixed;right:22px;bottom:22px;z-index:50;width:54px;height:54px;background:#218a49;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px #0002}.floating-whatsapp svg{width:27px;height:27px}.booking-page{background:#faf9f6;color:#24291f;padding:60px 6% 80px}.booking-heading{text-align:center;max-width:650px;margin:0 auto 30px}.booking-heading h1{font-size:40px;letter-spacing:-2px;margin-bottom:15px}.booking-heading p{font-size:14px;line-height:1.7;color:#68715c}.booking-page .standalone-booking{margin-top:35px}@media(max-width:760px){.hero-art>img{height:315px;margin-top:0}}
+.creator-credit { grid-column: 1 / -1; text-align: center; border-top: 1px solid #444b3e; padding-top: 24px; }
+.creator-credit p { margin: 8px 0; font-size: 14px; line-height: 1.8; }
+.creator-credit a { color: #ffd6af; text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.menu-button { min-width: 44px; min-height: 44px; }
+.contact-banner > div:first-child { max-width: 620px; }
+@media (max-width: 760px) {
+  .ps-nav { gap: 6px; padding-inline: 4%; }
+  .nav-actions { gap: 4px; }
+  .ps-brand { gap: 5px; }
+  .ps-brand > span { font-size: 16px; }
+  .hero-copy h1 { font-size: clamp(36px, 10.5vw, 53px); letter-spacing: -2px; }
+  .hero-copy > p, .section-top > p, .step p, .faq-list details p, .faq-section > div > p, .booking-section > div > p, .contact-banner p { font-size: 15px; }
+  .hero-location { font-size: 14px; line-height: 1.6; }
+  .hero-location small { font-size: 12px; }
+  .hero-art { min-width: 0; }
+  .hero-circle { width: min(325px, 100%); aspect-ratio: 1; height: auto; }
+  .hero-word { font-size: clamp(70px, 25vw, 100px); }
+  .hero-art > img { max-width: 100%; }
+  .ride-stamp { font-size: 10px; }
+  .hero-actions { gap: 16px; flex-wrap: wrap; }
+  .bike-grid { grid-template-columns: 1fr; gap: 22px; }
+  .bike-picture { height: 255px; }
+  .bike-picture > span { font-size: 10px; }
+  .bike-info { padding: 20px; }
+  .bike-title h3 { font-size: 24px; }
+  .bike-info > p, .bike-spec, .fleet-note { font-size: 13px; }
+  .bike-bottom { flex-direction: row; align-items: center; }
+  .bike-bottom strong { font-size: 22px; }
+  .bike-bottom small { font-size: 12px; }
+  .bike-bottom a { min-height: 44px; padding: 10px 14px; border: 1px solid #e5bca7; border-radius: 6px; font-size: 14px; }
+  .filter-row { flex-wrap: wrap; }
+  .filter-row button { min-height: 44px; font-size: 13px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .ride-form label { font-size: 14px; }
+  .ride-form input, .ride-form select { font-size: 16px; min-height: 48px; }
+  .form-help { font-size: 12px !important; }
+  .ps-button { min-height: 48px; font-size: 14px; }
+  .nav-actions .ps-button { min-height: 44px; padding: 10px; font-size: 12px; }
+  .faq-list summary { font-size: 15px; min-height: 44px; align-items: center; }
+  .ps-footer > div:nth-child(2) a { display: flex; align-items: center; min-height: 44px; font-size: 15px; }
+  .footer-bottom { font-size: 12px; line-height: 1.7; }
+  .creator-credit a { display: inline-block; padding: 8px 0; }
+  .floating-whatsapp { bottom: max(16px, env(safe-area-inset-bottom)); right: 16px; }
 }
