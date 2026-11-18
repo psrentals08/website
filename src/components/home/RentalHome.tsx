@@ -14,6 +14,8 @@ const bikes = [
   { id: 'shine-sp125', name: 'Honda Shine SP 125', type: 'Motorcycles', image: 'shine-sp125.avif', tag: 'HONDA', spec: 'Manual', previous: '₹700', price: '₹599', detail: '/day' },
   { id: 'jawa', name: 'Jawa', type: 'Motorcycles', image: 'jawa.avif', tag: 'JAWA', spec: 'Manual', price: '₹1,500', detail: '/day' },
   { id: 'hunter-350-white', name: 'Hunter 350 (White)', type: 'Motorcycles', image: 'hunter-350-white.webp', tag: 'ROYAL ENFIELD', spec: 'Manual · 350cc', price: '₹1,500', detail: '/day' },
+  { id: 'suzuki-access-125', name: 'Suzuki Access 125', type: 'Scooters', image: 'access-125.webp', tag: 'SUZUKI', spec: 'Automatic · 125cc', previous: '₹600', price: '₹499', detail: '/day' },
+  { id: 'ktm-200-duke', name: 'KTM 200 Duke', type: 'Motorcycles', image: 'ktm-200-duke.png', tag: 'KTM', spec: 'Manual · 200cc', previous: '₹700', price: '₹599', detail: '/day' },
 ];
 export function RideForm({ initialVehicle = '' }: { initialVehicle?: string }) {
   const [error, setError] = useState('');
