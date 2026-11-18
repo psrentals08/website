@@ -23,6 +23,7 @@ Run `npm ci` then `npm run dev`.
 - `public`: logo, bike photos and video
 
 ## Rental enquiries
-All scooters and commuter bikes are ₹500/day; Royal Enfield Hunter 350 is ₹1,500/day. Customers send their own WhatsApp enquiry to +91 99858 19038. The business must confirm availability; there is no payment processor or reservation database.
+Scooters are ₹499/day, standard motorcycles are ₹599/day, and Jawa and Royal Enfield are ₹1,500/day. Customers send their own WhatsApp enquiry to +91 99858 19038. The business must confirm availability; there is no payment processor or reservation database.
 
 Website created by Rama Sivaji. Website development enquiries: ramsivaji0@gmail.com.
+
