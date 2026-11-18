@@ -45,7 +45,7 @@ export default function RentalHome() {
    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
    const timer = window.setInterval(() => {
      if (!motion.matches && !document.hidden) setWhiteHunter(current => !current);
-   }, 4500);
+   }, 800);
    return () => window.clearInterval(timer);
  }, [manualColour]);
  return <div className="ps-home">
