@@ -53,3 +53,6 @@ a{color:inherit;text-decoration:none}button,input,select{font-family:inherit}.he
   .creator-credit a { display: inline-block; padding: 8px 0; }
   .floating-whatsapp { bottom: max(16px, env(safe-area-inset-bottom)); right: 16px; }
 }
+.hunter-colours { display: inline-flex; gap: 4px; margin-left: 6px; vertical-align: middle; }
+.hunter-colours button { background: transparent; color: #353d2d; border: 1px solid #aeb4a5; padding: 6px 9px; border-radius: 12px; font-size: 12px; }
+.hunter-colours button[aria-pressed="true"] { background: #293022; color: white; }
